@@ -15,4 +15,4 @@ lazy val root = (project in file("."))
       "-Xfatal-warnings"
     ),
     javaOptions ++= Seq("-Dagentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=0.0.0.0:4040")
-  )
+)
