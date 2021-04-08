@@ -13,5 +13,6 @@ lazy val root = (project in file("."))
       "-feature",
       "-deprecation",
       "-Xfatal-warnings"
-    )
+    ),
+    javaOptions ++= Seq("-Dagentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=0.0.0.0:4040")
   )
